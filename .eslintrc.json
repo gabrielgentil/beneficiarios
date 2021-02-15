@@ -1,0 +1,28 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["import"],
+  "globals": {
+    "app": false
+  },
+  "rules": {
+    "arrow-parens": ["error", "always"],
+    "class-methods-use-this": 0,
+    "no-underscore-dangle": 0,
+    "no-await-in-loop": 0,
+    "no-else-return": 0,
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error", "info"]
+      }
+    ],
+    "max-len": [
+      0,
+      120,
+      {
+        "ignoreTemplateLiterals": true,
+        "tabWidth": 4
+      }
+    ]
+  }
+}
