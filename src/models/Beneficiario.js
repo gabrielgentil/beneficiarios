@@ -17,7 +17,7 @@ const beneficiarySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  tipo_plano_id: {
+  tipo_plano: {
     type: String,
     required: true,
     enum: ["Basic", "Standard", "Premium"],

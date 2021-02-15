@@ -18,7 +18,7 @@ const BeneficiarioController = {
   async post(req, res, next) {
     try {
       validationService().validar(
-        ["nome", "cpf", "rg", "data_nascimento", "tipo_plano_id"],
+        ["nome", "cpf", "rg", "data_nascimento", "tipo_plano"],
         req.body
       );
 
@@ -52,7 +52,7 @@ const BeneficiarioController = {
   async put(req, res, next) {
     try {
       validationService().validar(
-        ["nome", "cpf", "rg", "data_nascimento", "tipo_plano_id"],
+        ["nome", "cpf", "rg", "data_nascimento", "tipo_plano"],
         req.body
       );
       const beneficiarioUpdate = await beneficiarioDomain.put(
